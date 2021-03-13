@@ -1,38 +1,53 @@
 .App {
   text-align: center;
+  background-color: rgb(71, 71, 71);
+  color: rgb(248, 226, 198);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ /* Style the button that is used to open and close the collapsible content */
+.question {
+  background-color: rgb(246, 223, 207);
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  width: 40%;
+  border: rgb(59, 51, 51);
+  align-self: center;
+  outline: none;
+  font-size: 24px;
+  margin: 0 auto;
+  margin-top: 15px;
+  border-radius: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .question:hover {
+  background-color: rgb(185, 185, 185);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  overflow: hidden;
+  width: 40%;
+  margin-top: 0;
+  background-color: rgb(246, 223, 207);
+  color: #444;
+  margin: 0 auto;
+} 
+
+.comment {
+  background-color: rgb(182, 176, 172);
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  width: 40%;
+  border: rgb(59, 51, 51);
+  align-self: center;
+  outline: none;
+  font-size: 18px;
+  margin: 0 auto;
+  margin-top: 8px;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
